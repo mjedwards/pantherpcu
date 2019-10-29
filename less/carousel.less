@@ -2,6 +2,11 @@ section.carousel-container {
   width: 100vw;
   height: 700px;
   margin-top: 25px;
+
+  @media @mobile {
+    height: 400px;
+  }
+
   .carousel {
     position: relative;
     width: 100%;
@@ -52,10 +57,15 @@ section.carousel-container {
       width: 100%;
       text-align: center;
       z-index: 5;
+
       .btn {
         color: #333;
         font-size: 3em;
         text-decoration: none;
+
+        @media @mobile-two {
+          margin: 10px;
+        }
       }
     }
 
@@ -63,31 +73,85 @@ section.carousel-container {
       transform: translate3d(0px, 0px, 0px);
       background: url("../images/20190526_104636.jpg") no-repeat;
       background-size: cover;
+
+      @media @mobile {
+        background-size: cover;
+        background-position: center;
+      }
+
+      @media @mobile-two {
+        background-size: contain;
+      }
     }
 
     .green {
       background: url("../images/20190828_181325.jpg") no-repeat;
       background-size: cover;
+
+      @media @mobile {
+        background-size: cover;
+        background-position: center;
+      }
+
+      @media @mobile-two {
+        background-size: contain;
+      }
     }
 
     .yellow {
       background: url("../images/20190906_120307.jpg") no-repeat;
       background-size: cover;
+
+      @media @mobile {
+        background-size: cover;
+        background-position: center;
+      }
+
+      @media @mobile-two {
+        background-size: contain;
+      }
     }
 
     .blue {
       background: url("../images/20191013_090447\ \(1\).jpg") no-repeat;
       background-size: cover;
+
+      @media @mobile {
+        background-size: cover;
+        background-position: center;
+      }
+
+      @media @mobile-two {
+        background-size: contain;
+      }
     }
 
     .black {
       background: url("../images/20191013_143436\ \(1\).jpg") no-repeat;
       background-size: cover;
+
+      @media @mobile {
+        background-size: cover;
+        background-position: center;
+      }
+
+      @media @mobile-two {
+        background-size: contain;
+      }
     }
 
     .biege {
       background: url("../images/20191013_143441\ \(1\).jpg") no-repeat;
       background-size: cover;
+
+      @media @mobile {
+        background-size: cover;
+        background-position: center;
+      }
+
+      @media @mobile-two {
+        background-size: contain;
+      }
     }
   }
 }

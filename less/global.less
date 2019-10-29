@@ -27,6 +27,14 @@ header.header {
       font-weight: 900;
       color: white;
       text-align: center;
+
+      @media @mobile {
+        font-size: 3rem;
+      }
+
+      @media @mobile-two {
+        font-size: 2rem;
+      }
     }
 
     #btn {
@@ -35,6 +43,10 @@ header.header {
       background: none;
       width: 35%;
       margin-top: 20px;
+
+      @media @mobile {
+        font-size: 1rem;
+      }
     }
 
     #btn:hover {

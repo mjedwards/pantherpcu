@@ -6,9 +6,9 @@ function navAnimation() {
     if (window.scrollY != 0) {
       navbar.setAttribute(
         "style",
-        "position:fixed; background: #197ba8; z-index: 4;"
+        "position:fixed; background: #197ba8; z-index: 6;"
       );
-      headerItems.setAttribute("style", "margin-top: 266px;");
+      headerItems.setAttribute("style", "margin-top: 166px;");
     } else {
       navbar.setAttribute(
         "style",

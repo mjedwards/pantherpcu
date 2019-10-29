@@ -6,6 +6,18 @@ section.pictures {
   margin-top: 150px;
   margin-bottom: 150px;
 
+  @media @tablet {
+    flex-flow: row wrap;
+    margin-bottom: 450px;
+  }
+
+  @media @mobile {
+    flex-flow: column nowrap;
+    align-items: center;
+    margin-bottom: 150px;
+    height: 100%;
+  }
+
   div {
     display: flex;
     flex-flow: column;
@@ -20,6 +32,19 @@ section.pictures {
     -moz-box-shadow: 10px 10px 5px 0px rgba(222, 219, 222, 1);
     box-shadow: 10px 10px 5px 0px rgba(222, 219, 222, 1);
 
+    @media @tablet {
+      width: 48%;
+      height: 100%;
+      // margin-top: 120px;
+      // margin-bottom: 350px;
+    }
+
+    @media @mobile {
+      width: 70%;
+      padding: 3% 0px;
+      line-height: 1.5rem;
+    }
+
     i {
       font-size: 2rem;
       color: #197ba8;
@@ -30,10 +55,18 @@ section.pictures {
       font-family: "Big Shoulders Text", cursive;
     }
 
+    hr {
+      width: 100%;
+    }
+
     p {
       color: #197ba8;
       padding: 10px 10px;
       font-family: "Big Shoulders Text", cursive;
+
+      @media @tablet {
+        padding: 10px 20%;
+      }
     }
   }
 }
