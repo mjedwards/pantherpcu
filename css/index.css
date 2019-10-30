@@ -126,6 +126,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+body {
+  overflow: hidden;
+}
 header.header {
   font-family: "Big Shoulders Text", cursive;
   font-weight: 900;
@@ -534,7 +537,7 @@ section#contact form p {
 }
 @media (max-width: 1000px) {
   section#contact form p {
-    width: 90%;
+    width: 80%;
   }
 }
 section#contact form p label {
@@ -559,7 +562,7 @@ section#contact form p label textarea {
 }
 @media (max-width: 1000px) {
   section#contact form p label textarea {
-    width: 90%;
+    width: 80%;
   }
 }
 section#contact form p button {
