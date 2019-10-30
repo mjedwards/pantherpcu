@@ -126,9 +126,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-body {
-  overflow: hidden;
-}
 header.header {
   font-family: "Big Shoulders Text", cursive;
   font-weight: 900;
