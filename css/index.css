@@ -197,12 +197,13 @@ header nav {
   display: flex;
   flex-flow: column nowrap;
   width: 100%;
+  height: auto;
 }
 header nav img.logo {
   z-index: 2;
   margin: 10px 0px;
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 header nav ul {
   display: flex;
