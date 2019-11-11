@@ -140,7 +140,7 @@ header.header img {
   left: 0;
   top: 0;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
 }
 header.header div.header-items {
   display: flex;
@@ -170,7 +170,7 @@ header.header div.header-items #btn {
   font-size: 1.5rem;
   border: solid 1px #197ba8;
   background: none;
-  width: 35%;
+  width: 100%;
   margin-top: 20px;
 }
 @media (max-width: 1000px) {
@@ -231,6 +231,12 @@ footer {
   background-color: black;
   height: 50vh;
   font-family: "Big Shoulders Text", cursive;
+}
+@media (max-width: 1000px) {
+  footer {
+    height: 75vh;
+    flex-flow: column nowrap;
+  }
 }
 footer div.footer-menu {
   align-items: center;
@@ -534,7 +540,7 @@ section#contact form p {
 }
 @media (max-width: 1000px) {
   section#contact form p {
-    width: 80%;
+    width: 75%;
   }
 }
 section#contact form p label {
@@ -559,7 +565,7 @@ section#contact form p label textarea {
 }
 @media (max-width: 1000px) {
   section#contact form p label textarea {
-    width: 80%;
+    width: 100%;
   }
 }
 section#contact form p button {
@@ -570,7 +576,84 @@ section#contact form p button {
   color: white;
   font-size: 1.5rem;
 }
+@media (max-width: 1000px) {
+  section#contact form p button {
+    width: 50%;
+  }
+}
 section#contact hr {
   width: 100%;
   border: solid 1px black;
+}
+section.privacy {
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  width: 800px;
+  margin: 75px auto;
+  line-height: 1.5;
+  text-align: center;
+  font-family: "Big Shoulders Text", cursive;
+}
+@media (max-width: 1000px) {
+  section.privacy {
+    width: 90%;
+    font-size: 0.7rem;
+  }
+}
+section.privacy h4 {
+  font-size: 2rem;
+  font-family: "Big Shoulders Text", cursive;
+}
+section.aos {
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  width: 800px;
+  margin: 75px auto;
+  line-height: 1.5;
+  text-align: center;
+  font-family: "Big Shoulders Text", cursive;
+}
+@media (max-width: 1000px) {
+  section.aos {
+    width: 100vw;
+  }
+}
+section.aos h4 {
+  font-size: 2rem;
+  font-family: "Big Shoulders Text", cursive;
+}
+@media (max-width: 1000px) {
+  section.aos img {
+    width: 100%;
+  }
+}
+section.faq {
+  text-align: center;
+  font-family: "Big Shoulders Text", cursive;
+  margin: 100px auto;
+  line-height: 2.5;
+}
+@media (max-width: 1000px) {
+  section.faq {
+    line-height: 1.5;
+  }
+}
+section.faq .faq-h {
+  font-weight: 900;
+  font-size: 3rem;
+}
+@media (max-width: 1000px) {
+  section.faq .faq-h {
+    font-size: 1.5rem;
+  }
+}
+section.faq p {
+  font-size: 2rem;
+}
+@media (max-width: 1000px) {
+  section.faq p {
+    font-size: 1rem;
+  }
 }
